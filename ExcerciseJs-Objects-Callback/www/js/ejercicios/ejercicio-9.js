@@ -186,6 +186,10 @@ console.log(totalinfected);
  *
  */
 
+console.warn('TOTAL INFECTADOS DE PAISES');
+
+const countriesInfected = countries.filter((local) => local.infected);
+
 /**
  *  ###########################
  *  ## E J E R C I C I O   3 ##

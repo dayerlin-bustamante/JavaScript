@@ -180,9 +180,42 @@ console.table(pets);
 
 // 4. Obtén un array con las personas que tengan gato.
 
-console.warn('ARRAY CON LAS PERSONAS QUE TENGAS GATO');
+console.warn('ARRAY CON LOS COCHES DE LOS ESPAÑOLES');
 
 const gato = persons.filter((gato) => gato.pet.type === 'gato');
 
 console.table(gato);
 /* console.table(gato.map((cat) => cat.pet.type)); */
+
+// 5. Obtén un array con los coches de los españoles.
+
+console.warn('ARRAY CON LOS COCHES DE LOS ESPAÑOLES');
+
+const arrCoches = persons.filter((person) => {
+  return cars.find((car) => person.car === car.id && person.country === 'ES');
+});
+
+console.log(arrCoches);
+// 6. Obtén un array con las personas que tengan un coche de la marca Ford.
+
+console.warn('ARRAY CON LAS PERSONAS QUE TENGAS COCHE FORD');
+
+const arrFord = persons.filter((person) => {
+  return cars.find((car) => person.car === car.id && car.brand === 'Ford');
+});
+
+console.log(arrFord.map((ford) => ford.name));
+
+// 7. ¡Bonus point! Obtén un array con todas las personas en el que cada persona tenga toda la info de su coche.
+
+console.warn('ARRAY CON LAS PERSONAS Y INF DE SUS COCHES');
+
+const allPersons = persons.map((person) => {
+  const personClon = structuredClone(person);
+  return {
+    ...personClon,
+    car: cars.find((car) => car.id === person.car),
+  };
+});
+
+console.log(allPersons);
