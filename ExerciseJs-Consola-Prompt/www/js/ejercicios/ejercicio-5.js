@@ -18,6 +18,25 @@
 
 'use strict';
 
+console.warn('FUNCTION');
+
+function inverso(text) {
+    let arr = [];
+    arr = text
+        .toLowerCase()
+        .replace(',', '')
+        .replace('!', '')
+        .replace('¡', '')
+        .split(' ')
+        .sort();
+
+    console.log(arr.reverse());
+}
+
+inverso('¡Lorem Ipsum Dolor Sit Amet, Consectetur Elit Adipisicing!');
+
+console.warn('SIN FUNCTION');
+
 const text = '¡Lorem Ipsum Dolor Sit Amet, Consectetur Elit Adipisicing!';
 let word = [];
 

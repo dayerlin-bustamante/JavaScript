@@ -13,6 +13,24 @@
 
 'use strict';
 
+console.warn('EJERCICIO EN FUNCTION BUSCAR LA LETRA');
+
+let letras = [];
+
+function buscador(text) {
+    for (let i = 0; i < text.length; i++) {
+        if (text[i].toLowerCase() === 'r') {
+            letras.push(i);
+        }
+    }
+
+    console.log(letras);
+}
+
+buscador('Tres tristes tigres tragan trigo en un trigal.');
+
+console.warn('EJERCICIO SIN FUNCION BUSCAR LA LETRA');
+
 const text = 'Tres tristes tigres tragan trigo en un trigal.';
 let indices = [];
 
@@ -22,11 +40,22 @@ for (let i = 0; i < text.length; i++) {
 
 console.log(indices);
 
-console.log('SUSTITUYE e por i');
+console.warn(' EJERCICIO CON FUNTION SUSTITUYE e por i');
+
+function newletters(a, b) {
+    let newstring = '';
+    newstring = text.replaceAll(a, b);
+    console.log(newstring);
+}
+
+newletters('e', 'i');
+
+console.warn('EJERCICIO SIN FUNTION SUSTITUYE e por i');
 
 let newstring = '';
 newstring = text.replaceAll('e', 'i');
 console.log(newstring);
-/* 
+
+console.warn('EJERCICIO CORTO');
+
 console.log(text.replaceAll('e', 'i'));
- */

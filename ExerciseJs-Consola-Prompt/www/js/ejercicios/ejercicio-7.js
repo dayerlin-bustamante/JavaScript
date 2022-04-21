@@ -22,4 +22,4 @@ function palindromo(text) {
     return false;
 }
 
-console.log(palindromo('oso'));
+console.log(palindromo('A luna ese anula'));

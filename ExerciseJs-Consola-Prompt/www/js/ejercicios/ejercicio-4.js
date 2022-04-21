@@ -23,16 +23,4 @@ function isPrime(num) {
     return true;
 }
 
-console.log(isPrime(2));
-
-function primeCounter(num) {
-    for (let i = 2; i <= num; i++) {
-        if (isPrime(i)) {
-            console.warn(`Este numero ${i} es primo`);
-        }
-
-        console.error(`Este numero ${i} no es primo`);
-    }
-}
-
-console.log(primeCounter(25));
+console.log(isPrime(5));

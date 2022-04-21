@@ -1,0 +1,29 @@
+* {
+    margin:0;
+    padding:  0;
+    box-sizing: border-box;
+}
+
+
+body {
+    margin-top: 5rem;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: whitesmoke;
+    box-shadow: 3px 5px 5px black;
+}
+
+button {
+    margin-top: 1rem;
+}
+
+h4 {
+    margin-top: 1rem;
+}

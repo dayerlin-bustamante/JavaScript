@@ -18,9 +18,9 @@
 'use strict';
 
 const Car = {
-    brand: 'Opel',
-    model: 'Corsa',
-    color: 'red',
+  brand: 'Opel',
+  model: 'Corsa',
+  color: 'red',
 };
 
 console.table(Car);
@@ -31,11 +31,9 @@ Car['year'] = 1997;
 console.table(Car);
 
 if (
-    confirm(
-        'Para mostrar las propiedades acepta, para mostrar valores rechaza.'
-    )
+  confirm('Para mostrar las propiedades acepta, para mostrar valores rechaza.')
 ) {
-    console.log(Object.keys(Car));
+  console.log(Object.keys(Car));
 } else {
-    console.log(Object.values(Car));
+  console.log(Object.values(Car));
 }

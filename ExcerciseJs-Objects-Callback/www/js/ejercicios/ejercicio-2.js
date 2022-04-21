@@ -22,13 +22,13 @@
 'use strict';
 
 const fruitBasket = [
-    'naranja',
-    'naranja',
-    'limón',
-    'pera',
-    'limón',
-    'plátano',
-    'naranja',
+  'naranja',
+  'naranja',
+  'limón',
+  'pera',
+  'limón',
+  'plátano',
+  'naranja',
 ];
 
 // Creamos un objeto donde iremos almacenando las frutas y sus cantidades.
@@ -38,20 +38,24 @@ const objFruits = {};
 // Recorremos el array de frutas.
 
 for (const i of fruitBasket) {
-    // Comprobamos si la fruta actual existe dentro del objeto que hemos creado en el primer paso.
-    if (i in objFruits) {
-        // Si existe aumentamos en +1 la cantidad.
-        objFruits[i]++;
-    } else {
-        // Si no existe creamos la propiedad y le asignamos como valor el 1.
-        objFruits[i] = 1;
-    }
+  // Comprobamos si la fruta actual existe dentro del objeto que hemos creado en el primer paso.
+  if (i in objFruits) {
+    // Si existe aumentamos en +1 la cantidad.
+    objFruits[i]++;
+  } else {
+    // Si no existe creamos la propiedad y le asignamos como valor el 1.
+    objFruits[i] = 1;
+  }
 }
 
+console.table(objFruits);
+
+console.warn('CON FOR');
+
 for (i = 0; i < fruitBasket.lenght; i++) {
-    if (i in fruitBasket) {
-        objFruits[i]++;
-    } else {
-        objFruits[i] = 1;
-    }
+  if (i in fruitBasket) {
+    objFruits[i]++;
+  } else {
+    objFruits[i] = 1;
+  }
 }

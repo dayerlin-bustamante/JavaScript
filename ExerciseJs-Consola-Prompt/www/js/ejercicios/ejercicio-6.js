@@ -24,7 +24,7 @@
 
 'use strict';
 
-const text = 'Hola (que) tal';
+const text = 'Hola que (tal)';
 
 function getContet(str) {
     //Localizamos la posicion de los parentesis
@@ -42,6 +42,10 @@ function getContet(str) {
     else if (rightPar > -1) {
         return str.slice(0, rightPar);
     }
+
+    // else {
+    //     return str.slice(0, rightPar);
+    // }
 
     return;
 }

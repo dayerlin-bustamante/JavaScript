@@ -82,5 +82,9 @@ function letra(num) {
         } else if (DNI < 10000000 || (DNI > 99999999 && i === num)) {
             alert('Incorrecto Introduce de nuevo tu DNI');
         }
+
     }
+
+     return 'Acabastes tus intentos';
+
 } */
