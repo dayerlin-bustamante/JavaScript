@@ -1,5 +1,7 @@
 'use strick';
 
+// Comprobar si una palabra es Palindrome
+
 function palindrome(str) {
   str = str
     .replaceAll(/[^0-9a-z]/g, '')
